@@ -1005,8 +1005,7 @@ footer {
 }
 
 /* ════════ RESPONSIVE ════════ */
-
-/* ── Tablet (≤768px) ── */
+/* ══ TABLET ≤768px ══ */
 @media (max-width: 768px) {
 
   /* NAVBAR */
@@ -1016,271 +1015,95 @@ footer {
     gap: 10px;
     align-items: center;
   }
-
-  .logo {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .nav-links {
-    justify-content: center;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  .nav-btn {
-    padding: 6px 14px;
-    font-size: 0.82rem;
-  }
+  .logo { font-size: 1.5rem; text-align: center; }
+  .nav-links { justify-content: center; gap: 8px; flex-wrap: wrap; }
+  .nav-btn { padding: 6px 14px; font-size: 0.82rem; }
 
   /* HERO */
-  .hero {
-    padding: 40px 20px;
-  }
-
-  .hero-btns {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .btn-success,
-  .btn-secondary {
-    width: 100%;
-    max-width: 320px;
-    padding: 12px 24px;
-    font-size: 1rem;
+  .hero { padding: 40px 20px; }
+  .hero-btns { flex-direction: column; align-items: center; gap: 12px; }
+  .btn-success, .btn-secondary {
+    width: 100%; max-width: 320px; padding: 12px 24px; font-size: 1rem;
   }
 
   /* MATERI */
-  .materi-header {
-    padding: 28px 16px 16px;
-  }
-
-  .categories {
-    padding: 0 16px 24px;
-    gap: 8px;
-  }
-
-  .cat-btn {
-    padding: 8px 14px;
-    font-size: 0.82rem;
-  }
-
-  .alat-grid {
-    padding: 0 16px;
-    gap: 14px;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
+  .materi-header { padding: 28px 16px 16px; }
+  .categories { padding: 0 16px 24px; gap: 8px; }
+  .cat-btn { padding: 8px 14px; font-size: 0.82rem; }
+  .alat-grid { padding: 0 16px; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
 
   /* MODAL */
-  .modal-overlay {
-    padding: 16px 12px;
-    align-items: flex-start;
-  }
-
-  .modal {
-    padding: 24px 18px;
-    border-radius: 18px;
-    max-height: 88vh;
-  }
-
-  .modal-name {
-    font-size: 1.35rem;
-  }
-
-  .sketchfab-wrap iframe,
-  .youtube-wrap iframe {
-    height: 220px;
-  }
+  .modal-overlay { padding: 16px 12px; }
+  .modal { padding: 24px 18px; border-radius: 18px; }
+  .modal-name { font-size: 1.35rem; }
+  .sketchfab-wrap iframe, .youtube-wrap iframe { height: 220px; }
 
   /* GHS Modal */
-  .ghs-modal-header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 12px;
-  }
-
-  .ghs-modal-img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .ghs-modal-img svg,
-  .ghs-modal-img img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .ghs-modal-nama {
-    font-size: 1.2rem;
-  }
+  .ghs-modal-header { flex-direction: column; align-items: center; text-align: center; gap: 12px; }
+  .ghs-modal-img { width: 100px; height: 100px; }
+  .ghs-modal-img svg, .ghs-modal-img img { width: 80px; height: 80px; }
+  .ghs-modal-nama { font-size: 1.2rem; }
 
   /* PERMAINAN */
-  #permainan {
-    padding: 24px 16px;
-  }
+  #permainan { padding: 24px 16px; }
+  .game-modes { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .game-mode-card { padding: 18px 12px; }
+  .game-mode-icon { font-size: 2rem; }
+  .game-mode-title { font-size: 1rem; }
+  .game-mode-desc { font-size: 0.78rem; }
+  .game-frame-wrap { min-height: 500px; }
+  .game-frame-wrap iframe { min-height: 480px; }
 
-  .game-modes {
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-
-  .game-mode-card {
-    padding: 18px 12px;
-  }
-
-  .game-mode-icon {
-    font-size: 2rem;
-  }
-
-  .game-mode-title {
-    font-size: 1rem;
-  }
-
-  .game-mode-desc {
-    font-size: 0.78rem;
-  }
-
-  .game-frame-wrap {
-    min-height: 500px;
-  }
-
-  .game-frame-wrap iframe {
-    min-height: 480px;
-  }
-
-  /* PROFIL */
-  #profil {
-    padding: 32px 16px;
-  }
-
+  /* PROFIL — susun vertikal di tablet */
+  #profil { padding: 32px 16px; }
   .profil-container {
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     overflow-x: visible;
     gap: 16px;
   }
-
-  .profil-card {
-    max-width: 100%;
-    width: 100%;
-    flex: none;
-  }
-
-  .profil-name {
-    font-size: 1.4rem;
-  }
-
-  .profil-desc {
-    font-size: 0.88rem;
-  }
+  .profil-card { max-width: 100%; width: 100%; flex: none; }
+  .profil-name { font-size: 1.4rem; }
 }
 
-/* ── HP Kecil (≤480px) ── */
+/* ══ HP KECIL ≤480px ══ */
 @media (max-width: 480px) {
 
   /* NAVBAR */
-  .nav-btn {
-    padding: 6px 10px;
-    font-size: 0.78rem;
-  }
+  .nav-btn { padding: 6px 10px; font-size: 0.78rem; }
 
   /* HERO */
-  .hero {
-    padding: 32px 16px;
-    gap: 18px;
-  }
-
-  .hero-badge {
-    font-size: 0.78rem;
-  }
+  .hero { padding: 32px 16px; gap: 18px; }
+  .hero-badge { font-size: 0.78rem; }
 
   /* MATERI */
-  .alat-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 0 12px;
-  }
-
-  .alat-card {
-    padding: 18px 12px 14px;
-  }
-
-  .alat-icon-img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .alat-name {
-    font-size: 0.9rem;
-  }
-
-  .alat-cat {
-    font-size: 0.72rem;
-  }
-
-  /* GHS Grid di modal */
-  .ghs-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6px;
-  }
-
-  .ghs-svg {
-    width: 52px;
-    height: 52px;
-  }
-
-  .ghs-nama {
-    font-size: 0.68rem;
-  }
-
-  .ghs-contoh {
-    font-size: 0.6rem;
-  }
+  .alat-grid { grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 12px; }
+  .alat-card { padding: 18px 12px 14px; }
+  .alat-icon-img { width: 80px; height: 80px; }
+  .alat-name { font-size: 0.9rem; }
+  .alat-cat { font-size: 0.72rem; }
 
   /* MODAL */
-  .modal {
-    padding: 20px 14px;
-  }
+  .modal { padding: 20px 14px; }
+  .sketchfab-wrap iframe, .youtube-wrap iframe { height: 190px; }
 
-  .sketchfab-wrap iframe,
-  .youtube-wrap iframe {
-    height: 190px;
-  }
+  /* GHS Grid */
+  .ghs-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .ghs-svg { width: 52px; height: 52px; }
+  .ghs-nama { font-size: 0.68rem; }
+  .ghs-contoh { font-size: 0.6rem; }
 
   /* PERMAINAN */
-  .game-modes {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .game-frame-wrap {
-    min-height: 420px;
-  }
-
-  .game-frame-wrap iframe {
-    min-height: 400px;
-  }
-
-  .game-placeholder {
-    padding: 40px 20px;
-  }
+  .game-modes { grid-template-columns: 1fr; gap: 10px; }
+  .game-frame-wrap { min-height: 420px; }
+  .game-frame-wrap iframe { min-height: 400px; }
+  .game-placeholder { padding: 40px 20px; }
 
   /* PROFIL */
-  .profil-name {
-    font-size: 1.25rem;
-  }
-
-  .avatar img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .section-title {
-    font-size: 1.6rem;
-  }
+  .profil-name { font-size: 1.25rem; }
+  .avatar img { width: 80px; height: 80px; }
+  .section-title { font-size: 1.6rem; }
 }
 
 /* ════════ IMAGE LIGHTBOX ════════ */
